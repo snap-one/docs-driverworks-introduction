@@ -31,7 +31,7 @@ Numerous sample drivers that demonstrate more complex driver concepts such as:
 Templates that will ensure that your driver's icons not only meet Control4 standards but look professional on devices running Navigator.
 
 **Driver Development Training**
-Control4 has created a series of video-based training courses focused on device driver development.  These videos are available through the training area of the Control4 Dealer Portal. Registration is required for both the Dealer Portal and the training site. These videos assume general knowledge of Control4 products, the ComposerPro environment and system setup as delivered in the Dealer Training (101) provided by the Control4 Training Department.
+Control4 has created a series of video-based training courses focused on device driver development.  These videos are available through the training area of the Control4 Dealer Portal. Registration is required for both the Dealer Portal and the training website. These videos assume general knowledge of Control4 products, the ComposerPro environment and system setup as delivered in the Dealer Training (101) provided by the Control4 Training Department.
 
 The current list of Driver Development Training Videos include:
 
