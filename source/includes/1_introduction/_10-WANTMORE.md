@@ -52,9 +52,11 @@ Driver Development T-201 - Proxy specific videos that use driver templates as we
 - Door Stations and Intercoms
 - Blind and Shade Controllers
 
-Access to the Dealer Portal can be found at: [http://dealer.control4.com]()
+Access to the Dealer Portal can be found at: [http://dealer.control4.com][1]
 
 Once logged in, click on Support -\> Drivers -\> Driver Development Training to access the Training Portal.
 
 
 
+
+[1]:	http://dealer.control4.com
