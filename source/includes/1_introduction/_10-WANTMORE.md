@@ -3,8 +3,11 @@
 The DriverWorks SDK includes detailed information on all of the content provided here. The SDK includes:
 
 **Documentation:**
+
 - [DriverWorks SDK Fundamentals][1] 
+-
 - [DriverWorks SDK API Reference Guide][2]
+
 - [DriverWorks SDK Proxy and Protocol Guide][3]
 
 **Driver Templates:**
