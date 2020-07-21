@@ -3,9 +3,12 @@
 The DriverWorks SDK includes detailed information on all of the content provided here. The SDK includes:
 
 **Documentation:**
-- DriverWorks SDK Fundamentals (this guide)
-- DriverWorks SDK API Reference Guide
-- DriverWorks SDK Proxy and Protocol Guide
+
+- [DriverWorks SDK Fundamentals][1] 
+
+- [DriverWorks SDK API Reference Guide][2]
+
+- [DriverWorks SDK Proxy and Protocol Guide][3]
 
 **Driver Templates:**
 Driver Templates provide an excellent jumping off point for your driver development. The current list of templates include Control4's most popular proxies including:
@@ -52,11 +55,14 @@ Driver Development T-201 - Proxy specific videos that use driver templates as we
 - Door Stations and Intercoms
 - Blind and Shade Controllers
 
-Access to the Dealer Portal can be found at: [http://dealer.control4.com][1]
+Access to the Dealer Portal can be found at: [http://dealer.control4.com][4]
 
 Once logged in, click on Support -\> Drivers -\> Driver Development Training to access the Training Portal.
 
 
 
 
-[1]:	http://dealer.control4.com
+[1]:	https://control4.github.io/docs-driverworks-fundamentals/#introduction
+[2]:	https://control4.github.io/docs-driverworks-api/#introduction
+[3]:	https://control4.github.io/docs-driverworks-proxyprotocol/#introduction
+[4]:	http://dealer.control4.com
