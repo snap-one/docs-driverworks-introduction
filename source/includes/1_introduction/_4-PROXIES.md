@@ -4,7 +4,7 @@ A Proxy Driver is the interface to the Control4 system for a class of devices th
 
 Control4 Proxies also include a set of predefined responses that the proxy expects to receive from your device after it receives a command. These are referred to as Protocol Notifications.  When implemented properly, the Notification passes through the Proxy and updates the Control4 user interfaces with the new state of the device. Continuing with our Receiver example, after the user selects On, the ON Proxy Command is sent to the device, the receiver turns on and sends the ON Protocol Notification to the proxy and ultimately the user interfaces which display the receiver as being on.
 
-It’s worth noting that If you want to use one of the existing interfaces provided in the Control4 Navigator you’ll need to select a proxy type that is already defined within the Control4 system.
+It’s worth noting that If you want to use one of the existing interfaces provided in the Control4 Navigator you’ll need to select a proxy type that is already defined within the Control4 system. 
 
 If you don’t need a standard Navigator interface, you can create a driver without a Proxy Interface. If you choose to do this your driver will still work within the Control4 system but your customers’ interactions with the system will be limited to what you implement using Control4 programming through commands and events. This method could be used to implement functionality initiated by custom buttons or keypad presses.
 

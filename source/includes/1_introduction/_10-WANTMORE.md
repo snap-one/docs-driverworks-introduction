@@ -4,7 +4,7 @@ The DriverWorks SDK includes detailed information on all of the content provided
 
 **Documentation:**
 
-- [DriverWorks SDK Fundamentals][1] 
+- [DriverWorks SDK Fundamentals][1]
 
 - [DriverWorks SDK API Reference Guide][2]
 
@@ -13,14 +13,19 @@ The DriverWorks SDK includes detailed information on all of the content provided
 **Driver Templates:**
 Driver Templates provide an excellent jumping off point for your driver development. The current list of templates include Control4's most popular proxies including:
 
-- Blinds
-- Locks
-- Receiver
-- TV
+- AV Switch
+- Blind
 - Doorstation
 - DVD
-- Security
-- Camera
+- Generic Proxy
+- IP Camera
+- Lock
+- Pool
+- Projector
+- Receiver
+- Security Controller
+- Thermostat
+- TV
 
 **Sample Drivers:**
 Numerous sample drivers that demonstrate more complex driver concepts such as:
