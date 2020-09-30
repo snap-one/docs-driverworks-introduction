@@ -8,7 +8,7 @@ When our on is pushed, an infrared signal is transmitted from the remote to the 
 
 A DriverWorks driver written for this particular receiver needs to contain the IR codes needed to control it. Your job as a driver developer will be to obtain these IR codes for the device your driver will control. When a user picks up a Control4 remote or navigates to the receiver and selects it, it executes the appropriate IR Code associated with On – from within the driver.
 
-The DriverWorks SDK includes rich set of APIs. Here is our SendIR API documentation.
+The DriverWorks SDK includes rich set of APIs. For example, here is our SendIR API documentation.
 
 
 ## SendIR
