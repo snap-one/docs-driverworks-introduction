@@ -4,7 +4,7 @@ Navigator is the main vehicle for direct user interaction with the Control4 Oper
 
 - Android OS used in Control4 touch screens and in MyHome PC
 - iOS Navigator used in Apple Apps
-- Android Navigator used in Android Apps\\
+- Android Navigator used in Android Apps
 - List Navigator used in Control4 Remotes
 
 By selecting Navigator elements, the end user can explicitly control a device (via a DriverWorks driver)  like turning on a light using the light icon from a Touch Panel or changing inputs on a receiver using a Control4 remote. Additionally, implicit control of one or many devices can be affected. For example, a complete Home Theater system can be powered-up, all inputs properly selected and the default volume set, merely by selecting a movie title from a media list. Understanding how Proxy and Protocol drivers participate in these and other interoperability scenarios are key to developing dependable drivers.
