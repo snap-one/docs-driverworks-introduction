@@ -1,4 +1,4 @@
-## Understanding the Role of Proxies and the Proxy Driver
+#  Understanding the Role of Proxies and the Proxy Driver
 
 A Proxy Driver is the interface to the Control4 system for a class of devices that have common functionality. For instance, most Audio Receivers have common controls such as ON, OFF, MUTE, LOUDNESS, etc. The Control4 Receiver Proxy represents a predefined interface for your use. This interface includes a command set, referred to as Proxy Commands, that you will implement in your device driver to control a device. For example, when a Control4 end user decides to turn On the receiver from a Control4 remote or touch panel, the Receiver Proxy’s ON Command is executed. Proxies are pre-defined and supplied by Control4. They cannot be edited.
 

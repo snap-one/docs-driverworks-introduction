@@ -1,4 +1,4 @@
-## Understanding the Role of Protocols and the Protocol Driver
+#  Understanding the Role of Protocols and the Protocol Driver
 
 We mentioned earlier how a Control4 Proxy is a representation of a class of device commands. The protocol is similar except for one major difference: it is device specific. Simply put, Protocols contain the definition for a specific device (the device you’re creating a driver for) and they are composed of functionality that is unique to that specific device.
 

@@ -1,4 +1,4 @@
-## Driver Development Terminology
+#  Driver Development Terminology
 
 **Actions** - Actions are similar to device specific commands. However, they are primarily intended to be used during driver installation and configuration. They can only be activated on the Actionstab in Composer and are not available for programming within the system. 
 

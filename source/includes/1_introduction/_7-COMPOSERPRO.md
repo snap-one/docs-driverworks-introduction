@@ -1,4 +1,4 @@
-## ComposerPro and Your Driver
+#  ComposerPro and Your Driver
 
 The ComposerPro software application will play an important role in your driver development efforts. Before discussing how it can enhance the experience dealers and integrators will have with your driver, it’s important to understand that ComposerPro also:
 

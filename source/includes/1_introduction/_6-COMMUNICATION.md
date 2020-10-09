@@ -1,4 +1,4 @@
-## Drivers and Communication
+#  Drivers and Communication
 
 Effective communication between your driver and Control4 System is paramount to a successful end user experience. In this section we’ll look at a few of the supported communication methods and discuss several Control4 APIs delivered in the DriverWorks SDK that facilitate communication between the driver and the Control4 O.S.
 

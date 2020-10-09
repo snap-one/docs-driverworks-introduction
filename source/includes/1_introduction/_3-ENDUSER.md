@@ -1,4 +1,4 @@
-## Considering End User Interaction
+#  Considering End User Interaction
 
 Navigator is the main vehicle for direct user interaction with the Control4 Operating System. The current iterations of Navigator are:
 
