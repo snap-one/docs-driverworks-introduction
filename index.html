@@ -1,0 +1,658 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Driverworks Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen-0a7c4629.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-c427a123.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-c5541673.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;lua&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar-cad8cdcb.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo-3056e635.png" class="logo" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="lua">lua</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#an-introduction-to-the-driverworks-sdk" class="toc-h1 toc-link" data-title="An Introduction to the DriverWorks SDK">An Introduction to the DriverWorks SDK</a>
+          </li>
+          <li>
+            <a href="#license-copyright-and-trademark" class="toc-h1 toc-link" data-title="License, Copyright, and Trademark">License, Copyright, and Trademark</a>
+          </li>
+          <li>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#the-role-of-director" class="toc-h1 toc-link" data-title="The Role of Director">The Role of Director</a>
+          </li>
+          <li>
+            <a href="#considering-end-user-interaction" class="toc-h1 toc-link" data-title="Considering End User Interaction">Considering End User Interaction</a>
+          </li>
+          <li>
+            <a href="#understanding-the-role-of-proxies-and-the-proxy-driver" class="toc-h1 toc-link" data-title="Understanding the Role of Proxies and the Proxy Driver">Understanding the Role of Proxies and the Proxy Driver</a>
+          </li>
+          <li>
+            <a href="#understanding-the-role-of-protocols-and-the-protocol-driver" class="toc-h1 toc-link" data-title="Understanding the Role of Protocols and the Protocol Driver">Understanding the Role of Protocols and the Protocol Driver</a>
+          </li>
+          <li>
+            <a href="#drivers-and-communication" class="toc-h1 toc-link" data-title="Drivers and Communication">Drivers and Communication</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#sendir" class="toc-h2 toc-link" data-title="SendIR">SendIR</a>
+                  </li>
+                  <li>
+                    <a href="#receivedfromserial" class="toc-h2 toc-link" data-title="ReceivedFromSerial">ReceivedFromSerial</a>
+                  </li>
+                  <li>
+                    <a href="#sendtoserial" class="toc-h2 toc-link" data-title="SendToSerial">SendToSerial</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#composerpro-and-your-driver" class="toc-h1 toc-link" data-title="ComposerPro and Your Driver">ComposerPro and Your Driver</a>
+          </li>
+          <li>
+            <a href="#driver-development-templates" class="toc-h1 toc-link" data-title="Driver Development Templates">Driver Development Templates</a>
+          </li>
+          <li>
+            <a href="#driver-development-terminology" class="toc-h1 toc-link" data-title="Driver Development Terminology">Driver Development Terminology</a>
+          </li>
+          <li>
+            <a href="#want-more-information" class="toc-h1 toc-link" data-title="Want More Information?">Want More Information?</a>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='an-introduction-to-the-driverworks-sdk'>An Introduction to the DriverWorks SDK</h1>
+
+<h1 id='license-copyright-and-trademark'>License, Copyright, and Trademark</h1>
+
+<p>The content contained in this repository is the intellectual property of Snap One, LLC, (formerly known as Wirepath Home Systems, LLC), and use without a valid license from Snap One is strictly prohibited. The user of this repository shall keep all content contained herein confidential and shall protect this content in whole or in part from disclosure to any and all third parties except as specifically authorized in writing by Snap One.</p>
+
+<p><strong>License and Intellectual Property Disclaimer</strong></p>
+
+<p>The content in this repository is provided in connection with Snap One products. No license, express or implied, by estoppal or otherwise, to any intellectual property rights is granted by this document or in this repository. Except as provided in Snap Oneʼs terms and conditions for the license of such products, Snap One and its affiliates assume no liability whatsoever and disclaim any express or implied warranty, relating to the sale and/or use of Snap One products including liability or warranties relating to fitness for a particular purpose, merchantability, or infringement of any patent, copyright or other intellectual property right. Snap One products are not intended for use in medical, lifesaving, or life sustaining applications.</p>
+
+<p>Information regarding third-party products is provided solely for educational purposes. Snap One is not responsible for the performance or support of third-party products and does not make any representations or warranties whatsoever regarding the quality, reliability, functionality or compatibility of these products. The reader is advised that third parties can have intellectual property rights that can be relevant to this repository and the technologies discussed herein, and is advised to seek the advice of competent legal counsel regarding the intellectual property rights of third parties, without obligation of Snap One.</p>
+
+<p>Snap One retains the right to make changes to this repository or related product specifications and descriptions in this repository, at any time, without notice. Snap One makes no warranty for the use of this repository and assumes no responsibility for any errors that can appear in the repository nor does it make a commitment to update the content contained herein.</p>
+
+<p><strong>Copyright</strong></p>
+
+<p>Copyright 2022 Snap One, LLC. All rights reserved.</p>
+
+<p>The above copyright notice applies to all content in this repository unless otherwise stated explicitly herein that a third-party’s copyright applies.</p>
+
+<p>No part of this publication may be reproduced, photocopied, stored on a retrieval system, or transmitted without the express written consent of the publisher.</p>
+
+<p><strong>Trademarks</strong></p>
+
+<p>Snap One and Snap One Logo, Control4 and the Control4 logo, and DriverWorks are trademarks or registered trademarks of  Snap One, LLC. Other product and company names mentioned in this repository may be the trademarks or registered trademarks of their respective owners.</p>
+
+<p><strong> Derivative Works</strong></p>
+
+<p>To the extent that you create any “Derivative Work” (meaning any work that is based upon one or more preexisting versions of the work provided to you in this repository, such as an enhancement or modification, revision, translation, abridgement, condensation, expansion, collection, compilation or any other form in which such preexisting works may be recast, modified, transformed or adapted, explicitly including without limitation, any updates or changes to Snap One, LLC’s software code or intellectual property) such Derivative Work shall be owned by Snap One, LLC and all right, title and interest in and to each such Derivative Work shall automatically vest in Snap One, LLC. To the extent any Derivative Work does not automatically vest in Snap One, LLC by operation of law, you hereby assign such Derivative Work to Snap One, LLC with full title guarantee. Snap One, LLC shall have no obligation to grant you any right in any such Derivative Work.</p>
+
+<p><strong>Contact Us</strong></p>
+
+<p>Snap One, LLC
+11734 S. Election Road
+Salt Lake City, UT 84020 USA</p>
+
+<p><a href="www.control4.com">http://www.control4.com</a></p>
+
+<h1 id='introduction'>Introduction</h1>
+
+<p>This section is intended to provide an overview of the fundamental components that make up a device driver and the architectural layers that a device driver must interact with.  As a driver developer, you’re tasked with implementing this “interaction”. Successful driver developers build drivers that not only handle numerous dependencies placed on their driver code – but also seek out ways to enhance a device’s capabilities in an automated environment. This level of interaction manifests itself as seamless device integration, a high level of device controllability and ultimately - a quality end user experience. This is something we refer to as the Control4 Interoperability Model.</p>
+
+<h1 id='the-role-of-director'>The Role of Director</h1>
+
+<p>Director is the software platform that runs on all Control4 controllers. It communicates with device drivers in a manner that enforces a standardized API which hides the complexity of a huge array of different systems and protocols. It also uses that communication to serve up various user interfaces that are displayed on a wide variety of navigation devices.</p>
+
+<h1 id='considering-end-user-interaction'>Considering End User Interaction</h1>
+
+<p>Navigator is the main vehicle for direct user interaction with the Control4 Operating System. The current iterations of Navigator are:</p>
+
+<ul>
+<li>Android OS used in Control4 touch screens and in MyHome PC</li>
+<li>iOS Navigator used in Apple Apps</li>
+<li>Android Navigator used in Android Apps</li>
+<li>List Navigator used in Control4 Remotes</li>
+</ul>
+
+<p>By selecting Navigator elements, the end user can explicitly control a device (via a DriverWorks driver)  like turning on a light using the light icon from a Touch Panel or changing inputs on a receiver using a Control4 remote. Additionally, implicit control of one or many devices can be affected. For example, a complete Home Theater system can be powered-up, all inputs properly selected and the default volume set, merely by selecting a movie title from a media list. Understanding how Proxy and Protocol drivers participate in these and other interoperability scenarios are key to developing dependable drivers.</p>
+
+<p>Your driver will report back to the Control4 system giving indication of device state (i.e., ON &amp; OFF, current volume, currently select media, etc.) and the of the occurrence of Events (i.e. the station has changed, button has been pressed, etc.). This data may be purely informational or may be used for decision making to initiate more advanced functionality.</p>
+
+<p>Another means of supporting user interaction and your device is the “Programming UI.” Programming UI refers to the interaction a user has with a device through programmed button presses, events or other means that are configured in the ComposerPro.</p>
+
+<h1 id='understanding-the-role-of-proxies-and-the-proxy-driver'>Understanding the Role of Proxies and the Proxy Driver</h1>
+
+<p>A Proxy Driver is the interface to the Control4 system for a class of devices that have common functionality. For instance, most Audio Receivers have common controls such as ON, OFF, MUTE, LOUDNESS, etc. The Control4 Receiver Proxy represents a predefined interface for your use. This interface includes a command set, referred to as Proxy Commands, that you will implement in your device driver to control a device. For example, when a Control4 end user decides to turn On the receiver from a Control4 remote or touch panel, the Receiver Proxy’s ON Command is executed. Proxies are pre-defined and supplied by Control4. They cannot be edited.</p>
+
+<p>Control4 Proxies also include a set of predefined responses that the proxy expects to receive from your device after it receives a command. These are referred to as Protocol Notifications.  When implemented properly, the Notification passes through the Proxy and updates the Control4 user interfaces with the new state of the device. Continuing with our Receiver example, after the user selects On, the ON Proxy Command is sent to the device, the receiver turns on and sends the ON Protocol Notification to the proxy and ultimately the user interfaces which display the receiver as being on.</p>
+
+<p>It’s worth noting that If you want to use one of the existing interfaces provided in the Control4 Navigator you’ll need to select a proxy type that is already defined within the Control4 system. </p>
+
+<p>If you don’t need a standard Navigator interface, you can create a driver without a Proxy Interface. If you choose to do this your driver will still work within the Control4 system but your customers’ interactions with the system will be limited to what you implement using Control4 programming through commands and events. This method could be used to implement functionality initiated by custom buttons or keypad presses.</p>
+
+<p>In summary, the device driver you are developing interacts with the Proxy driver which then interacts with the system.  Control4 provides proxies to serve as a layer that exists between Director and unique device drivers. As a driver developer you will be relying on this proxy layer to provide status (Protocol Notifications) to the Control4 system for the device you are controlling.  You will also receive commands (Proxy Commands)from the system that you will act on to control the device.  These commands and notifications are at the heart of what you will be implementing in your driver.  Essentially your driver is becoming the go-between from the Control4 system and your device with the Proxy driver giving structure to the Commands and Notifications which you will be implementing.</p>
+
+<p>Control4’s Director application sends information to and receives information from the Proxy drivers. The Proxy driver sends information to and receives information from the Protocol drivers. As a driver developer, you&#39;ll combine these within your device-specific driver file to deliver the custom code necessary to implement the 2-way device driver.</p>
+
+<h1 id='understanding-the-role-of-protocols-and-the-protocol-driver'>Understanding the Role of Protocols and the Protocol Driver</h1>
+
+<p>We mentioned earlier how a Control4 Proxy is a representation of a class of device commands. The protocol is similar except for one major difference: it is device specific. Simply put, Protocols contain the definition for a specific device (the device you’re creating a driver for) and they are composed of functionality that is unique to that specific device.</p>
+
+<p>Protocols are important as two similar devices may have the same functionality but utilize a very different command syntax. A protocol driver provides the device-specific information needed to communicate with the Control4 system.  Inside of your device driver, protocol code is written in XML and Lua which is an embedded scripting language delivered with the DriverWorks SDK. The resulting file is referred to as the “Protocol Driver”. When combined with the Proxy Driver, it provides the foundation needed to implement a 2-way device driver in the Control4 OS.</p>
+
+<p>Keep in mind, when we refer to a Protocol Driver, we’re talking about the implementation of the protocol in the form of a driver file. Protocol drivers must have a “.C4i or .C4z” file extension. When this driver is added to a Control4 Automation system, device control is dictated by the functions defined in the protocol driver based upon the commands published by the device manufacturer.</p>
+
+<h1 id='drivers-and-communication'>Drivers and Communication</h1>
+
+<p>Effective communication between your driver and Control4 System is paramount to a successful end user experience. In this section we’ll look at a few of the supported communication methods and discuss several Control4 APIs delivered in the DriverWorks SDK that facilitate communication between the driver and the Control4 O.S.</p>
+
+<p>In keeping with our Receiver example, the act of turning the receiver on seems rather insignificant to the end user. The remote is picked up and the on is pushed. Pretty straightforward. But how does this model apply to a controlled environment where we’re not using the provided Receiver remote and our receiver needs to reside in a Control4 System?</p>
+
+<p>When our on is pushed, an infrared signal is transmitted from the remote to the Receiver. This signal is turned on and off in a particular pattern. The frequency or pattern of the on or off represents a code. When the device receives and decodes the signal – it performs a “On” action.</p>
+
+<p>A DriverWorks driver written for this particular receiver needs to contain the IR codes needed to control it. Your job as a driver developer will be to obtain these IR codes for the device your driver will control. When a user picks up a Control4 remote or navigates to the receiver and selects it, it executes the appropriate IR Code associated with On – from within the driver.</p>
+
+<p>The DriverWorks SDK includes rich set of APIs. For example, here is our SendIR API documentation.</p>
+
+<h2 id='sendir'>SendIR</h2>
+
+<p>Function called from DriverWorks driver to send an IR Code. This API should not be invoked during OnDriverInit. </p>
+
+<h3 id='signature'>Signature</h3>
+
+<p><code>C4:SendIR(idBinding,idIRCode)</code> </p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>idBinding</td>
+<td>IR Binding ID to send the IR Code.</td>
+</tr>
+<tr>
+<td>idIRCode</td>
+<td>ID of the IR Code to send from .c4i/.c4z</td>
+</tr>
+<tr>
+<td>idBinding</td>
+<td>Proxy Binding ID. (optional)</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='usage-note'>Usage Note</h3>
+
+<p>The IR code to send must be declared as an &lt;ircode&gt; in the &lt;irsection&gt; of the driver’s .c4i/.c4z file.</p>
+
+<p>Based on the information here, we know that in order to use the API we need to send a control connection ID value for the device we’re controlling as well as the ID for the IR Command we wish to send.
+Our IR Code is sent to Director using the SendIR API. Director then responds by executing the code and controlling our device. Your driver’s job is to send the correct command using the appropriate settings to achieve device control.</p>
+
+<p>Let&#39;s take a look at another means of device communication supported by Control4 – Serial, also known as, RS 232.  Serial control offers driver developers a feature that IR does not – it supports two-way communication. When we refer to “two way communication” we are referring the ability to send a commands to a device AND receive status and feedback from that device. This is not insignificant, especially when you consider the benefits of being able to ascertain a device’s state before you send it a command.</p>
+
+<p>This is also a good time to look at some Serial control API’s that are available through the DriverWorks API Reference Guide. Remember when we mentioned that serial control has a significant benefit as it provides the ability to receive feedback from a device? That feedback comes through on an API called: ReceivedfromSerial. This API requires the control connection ID through which the data was received through along with the actual transmitted data from the device.</p>
+
+<h2 id='receivedfromserial'>ReceivedFromSerial</h2>
+
+<p>Function which dumps the data received from serial (hex format) for inspection via print.  It then evaluates the response for specific delimiters and extracts the necessary components which are then used to do something. This API should not be invoked during OnDriverInit. </p>
+
+<h3 id='signature-2'>Signature</h3>
+
+<p><code>ReceivedFromSerial(idBinding, strData) </code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>idBinding</td>
+<td>Binding ID of the serial interface the data was received on.</td>
+</tr>
+<tr>
+<td>strData</td>
+<td>Data received from the serial interface Returns None.</td>
+</tr>
+</tbody></table>
+
+<h3 id='usage-note-2'>Usage Note:</h3>
+
+<p>Serial data received may contain NULL characters. NULL (‘0’) is a valid character and Lua strings handle embedded NULL characters. Serial data received may only include part of a protocol command from the connected device. It is the driver’s responsibility to re-constitute and parse the commands received from the device.</p>
+
+<p>SendToSerial is another API worth mentioning. It provides a means to send data to your device:</p>
+
+<h2 id='sendtoserial'>SendToSerial</h2>
+
+<p>Simple function which sends the command out serial port on binding 1 and adds the r terminator to the end of the command being sent. This API should not be invoked during OnDriverInit.</p>
+
+<h3 id='signature-3'>Signature</h3>
+
+<p><code>C4:SendToSerial(idBinding, strData)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>idBinding</td>
+<td>Binding ID of the serial interface to send on.</td>
+</tr>
+<tr>
+<td>strData</td>
+<td>Data to send out the specified serial interface</td>
+</tr>
+</tbody></table>
+
+<h3 id='returns-2'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='usage-note-3'>Usage Note</h3>
+
+<p>Serial data to be sent can contain NULL characters. NULL (‘0’) is a valid character and Lua strings handle embedded NULL characters.</p>
+
+<p>Like ReceivedfromSerial, it requires a binding ID and the data string. Using these two APIs we can send commands to our receiver from a remote or a touch panel and then receive information back that indicates status or provide us with the ability to enact further control measures.</p>
+
+<h1 id='composerpro-and-your-driver'>ComposerPro and Your Driver</h1>
+
+<p>The ComposerPro software application will play an important role in your driver development efforts. Before discussing how it can enhance the experience dealers and integrators will have with your driver, it’s important to understand that ComposerPro also:</p>
+
+<ul>
+<li>Provides the ability for a dealer/integrator to search for and locate your driver.</li>
+<li>Provides the ability for your driver to be added to a Control4 project</li>
+<li>Provides the ability for your driver to be updated when needed.</li>
+</ul>
+
+<p>In developing your driver you’ll want to consider the driver’s Properties. Properties are data values which are used within your driver. They are defined by you in your driver code and exposed in the Composer System Design interface on the Properties tab. It might be helpful to consider the Properties area of ComposerPro as a “Driver Configuration Section”. You control what is displayed in this area of ComposerPro by the code created in the Properties section of your driver’s XML. This provides a way for dealers and integrators to modify how your driver performs within a given Control4 project. For example, our receiver driver may have a way to introduce a delay between commands that are sent to the device. We can create a “Command Delay-Milliseconds” Property which the supports a range of delay from 50 to 2500 milliseconds. The dealer or integrator setting up our driver can set this value to whatever they desire.</p>
+
+<p>ComposerPro also provides a way for you to display supporting Documentation. Quality setup and configuration documentation is an important component of any driver. The Documentation tab in ComposerPro offers you an opportunity to provide consumers of your driver some information that you feel may help them with implementation. The content displayed here is found in the Documentation section of the driver’s XML.</p>
+
+<p>Actions define programming which is specific to initial installation/configuration of your driver. This is typically functionality which is not required for ongoing driver use.</p>
+
+<p>The Action Tab is used to define programming which is specific to initial installation and configuration of the driver. This is typically functionality which is not required for ongoing driver use. For example, consider that our receiver driver happens to use an Action to fire a command. This particular receiver can also be controlled via Serial. In order to turn the receiver “ON” using a serial command, the ENABLE POWER_ON_RS232 Action must be fired.</p>
+
+<p>ComposerPro also includes an embedded Lua output window. This is a great way for you or a consumer to test the non XML portion of your driver. You can enter a Lua command and the output of that command is displayed in the Lua Output window. If there are any programming errors, the error messages will also be displayed in this window.</p>
+
+<p>Because the Lua Command window gives you access to an active interpreter running on the Controller, you can modify any of your Lua programming on the fly. You can re-compile functions, correct and improve your programming, and add functionality – all without leaving Composer. This is very useful when prototyping a driver.</p>
+
+<p>ComposerPro also offers the ability to support functionality found in your device that falls outside of the defined Control4 Proxy. Your drive can include unique device commands that can be made available to end users through the Programming UI that is configured within ComposerPro.</p>
+
+<h1 id='driver-development-templates'>Driver Development Templates</h1>
+
+<p>A driver development template is essentially a Control4 device driver. However, the contents of the driver resemble more of a framework. Your job, as a driver developer, is to fill in the framework that we have provided to produce a finished device driver. Control4 currently provides templates for the following Proxies:</p>
+
+<ul>
+<li>AV Switch</li>
+<li>Blind</li>
+<li>Doorstation</li>
+<li>DVD</li>
+<li>Generic Proxy</li>
+<li>IP Camera</li>
+<li>Lock</li>
+<li>Pool</li>
+<li>Projector</li>
+<li>Receiver</li>
+<li>Security Controller</li>
+<li>Thermostat</li>
+<li>TV</li>
+</ul>
+
+<h1 id='driver-development-terminology'>Driver Development Terminology</h1>
+
+<p><strong>Actions</strong> - Actions are similar to device specific commands. However, they are primarily intended to be used during driver installation and configuration. They can only be activated on the Actionstab in Composer and are not available for programming within the system. </p>
+
+<p><strong>Android Navigator</strong> – A graphical interface displayed on devices running the Android OS platform.</p>
+
+<p><strong>Capabilities</strong> - Capabilities are defined in a proxy and referenced in protocol drivers. They represent typical functionality and physical characteristics found in devices of a given device class. Values for each Capability are entered in a protocol driver and then in-turn are exposed to the Proxy.  This enables the proxy driver to determine what capabilities are supported by the device defined by the protocol.</p>
+
+<p><strong>Combo Driver</strong> – A standalone driver that does not bind itself to a Control4 proxy. User interaction is accomplished through programming, events and bindings. A Navigator UI is not provided for combo drivers. The <code>&lt;combo&gt;true&lt;/combo&gt;</code> tag must be added to every combo driver. This addition of this tag and its true setting in a combo driver (drivers that contain their own proxy and protocol) will avoid naming conflicts. Without the tag, the combo driver and its proxy must use identical names.</p>
+
+<p><strong>Command</strong> – A command comes from the Control4 system and its destination is a device or a driver.</p>
+
+<p><strong>Config</strong> - The config area of a protocol driver contains all of the device specific configuration properties.  The Lua code is also incorporated into the Config section.</p>
+
+<p><strong>Connections</strong> - Connections are the bindings defined in a driver and used within the Control4 system. Generally speaking, they are visible through Composer. In the case of AV, Control and Room bindings – they are reported to the proxy driver when they are bound together in a project.</p>
+
+<p><strong>Connection Class</strong> - Connection class information is defined inside each connection instance – within the connections code block of a driver. A connection class lists the physical data or signal type that a specific connection can to transmit.</p>
+
+<p><strong>Director</strong> - Director is the software platform that runs on all Control4 controllers. It communicates with device drivers in a manner that enforces a standardized API which hides the complexity of a huge array of different systems and protocols. It also uses that communication to serve up various user interfaces that are displayed on a wide variety of navigation devices.</p>
+
+<p><strong>Driver</strong> – A term used to describe files used in the Control Operating System. They are text-based files that have an extension of .c4i or .c4z. Several types of drivers exist including proxy drivers, protocol drivers, combo drivers and multi-proxy drivers.</p>
+
+<p><strong>iOS Navigator</strong> - A graphical interface displayed on devices running the iOS platform.</p>
+
+<p><strong>List Navigator</strong> – A text based Navigator instance that is used on Control4 Remote controls.</p>
+
+<p><strong>Multi-Proxy Driver</strong> – A Protocol driver that has dependencies upon several proxies. A receiver driver is good example of this. While the protocol driver for a Sony receiver is certainly device specific – it relies upon several proxies such Tuner and DVD in addition to the Receiver proxy.</p>
+
+<p><strong>Navigator</strong> – Refers to an instance of the Control4 UI running on a device.</p>
+
+<p><strong>Navigator Device</strong> – Refers to any device that is running a version of the Control4 Navigator. This includes TVs (onscreen navigator), touchscreens, remote controls, etc.</p>
+
+<p><strong>Navigator UI</strong> – A user interface that is graphically displayed on devices or may also refer to a text-based user interface as in List Navigator on remote controls.</p>
+
+<p><strong>Notification</strong> – Notifications are updates sent to the Control4 system that communicate status or update changes. These notifications may come from a device or the driver.</p>
+
+<p><strong>Programming UI</strong> – A user interface that does not utilize a graphical or text based user interface. This is usually implemented through programming, button presses, timers or events.</p>
+
+<p><strong>Properties</strong> - DriverWorks Properties, as defined in the .c4i file, are exposed in the Composer System Design interface on the Properties tab. Properties are data values which are used within your driver. These are initialized in the driver code and also may be configured through the Composer Properties page for your driver. Property data types include:</p>
+
+<p><strong>Protocol </strong>– Protocols contain the definition for a specific device. They are comprised of functionality that is unique to a specific device.</p>
+
+<p><strong>Protocol Driver</strong> – An implementation of the protocol in the form of a driver (.c4i) file. When this driver is added to a Control4 Automation system, device control is dictated by the functions defined in the protocol by the device manufacturer. User Interaction with the device is accomplished through system programming such as button presses and events. The UI is provided by one or possibly several of the proxies. In most instances of driver development, the driver developer will be creating a protocol driver.</p>
+
+<p><strong>Proxy</strong> – A Proxy contains the definition for a specific class of device. Proxies are comprised of the most common examples of functionality for each device class. The use of a proxy provides a common interface between the Control4 Navigator UI and a device driver. Proxies are pre-defined and supplied by Control4.</p>
+
+<p><strong>Proxy Binding Id</strong> - A proxy binding id is a numerical value that is assigned to each proxy used within a protocol driver. It is a unique reference that can be utilized in the protocol driver code. This id value is used often when sending data and ensures that the correct proxy-data relationship is always enforced.</p>
+
+<p><strong>Proxy Driver </strong>– An implementation of a proxy in the form of a driver (.c4i) file. When this file is included in a Control4 Automation system, device control includes that of the pre-defined functionality provided in the proxy. User interaction is provided through a Control4 Navigator interface.</p>
+
+<p><strong>UI</strong> – User Interface. General term referring to the manner in which a user interfaces with the Control4 system.</p>
+
+<h1 id='want-more-information'>Want More Information?</h1>
+
+<p>The DriverWorks SDK includes detailed information on all of the content provided here. The SDK includes:</p>
+
+<p><strong>Documentation:</strong></p>
+
+<ul>
+<li><p><a href="https://control4.github.io/docs-driverworks-fundamentals/#introduction">DriverWorks SDK Fundamentals</a></p></li>
+<li><p><a href="https://control4.github.io/docs-driverworks-api/#introduction">DriverWorks SDK API Reference Guide</a></p></li>
+<li><p><a href="https://control4.github.io/docs-driverworks-proxyprotocol/#introduction">DriverWorks SDK Proxy and Protocol Guide</a></p></li>
+<li><p><a href="https://control4.github.io/docs-driverworks-knx/#knx-and-control4">DriverWorks KNX Implementation Guide</a></p></li>
+<li><p><a href="https://control4.github.io/docs-zigbee/#overview">Zigbee Implementation Guide</a></p></li>
+</ul>
+
+<p><strong>Driver Templates:</strong>
+Driver Templates provide an excellent jumping off point for your driver development. The current list of templates include Control4&#39;s most popular proxies including:</p>
+
+<ul>
+<li>AV Switch</li>
+<li>Blind</li>
+<li>Doorstation</li>
+<li>DVD</li>
+<li>Generic Proxy</li>
+<li>IP Camera</li>
+<li>Lock</li>
+<li>Pool</li>
+<li>Projector</li>
+<li>Receiver</li>
+<li>Security Controller</li>
+<li>Thermostat</li>
+<li>TV</li>
+</ul>
+
+<p><strong>Sample Drivers:</strong>
+Numerous sample drivers that demonstrate more complex driver concepts such as:</p>
+
+<ul>
+<li>Leveraging Dynamic Driver Properties</li>
+<li>DLNA Implementation</li>
+<li>Websocket Management</li>
+<li>Using Dynamic Driver Bindings</li>
+</ul>
+
+<p><strong>Driver Icon Templates</strong>
+Templates that will ensure that your driver&#39;s icons not only meet Control4 standards but look professional on devices running Navigator.</p>
+
+<p><strong>Driver Development Training</strong>
+Control4 has created a series of video-based training courses focused on device driver development.  These videos are available through the training area of the Control4 Dealer Portal. Registration is required for both the Dealer Portal and the training website. These videos assume general knowledge of Control4 products, the ComposerPro environment and system setup as delivered in the Dealer Training (101) provided by the Control4 Training Department.</p>
+
+<p>The current list of Driver Development Training Videos include:</p>
+
+<p>Driver Development 201 - A video introduction to Control4 and its interoperability model.</p>
+
+<p>Driver Development 301 - A six video series of explaining Control4 driver architecture, data communication and development tools.</p>
+
+<p>Driver Development 401 - A seven video series addressing items such as the anatomy of a device driver, parsing data, the roles or the proxy and protocol drivers and an overview of Lua functions.</p>
+
+<p>Driver Development T-101 - A four video series introducing Control4&#39;s Driver Development Templates and use them to speed up driver development.</p>
+
+<p>Driver Development T-201 - Proxy specific videos that use driver templates as well as  the DriverEditor development environment to create device drivers for:</p>
+
+<ul>
+<li>IP Cameras</li>
+<li>Pool Controllers</li>
+<li>AV Switches</li>
+<li>Security Systems</li>
+<li>Door Stations and Intercoms</li>
+<li>Blind and Shade Controllers</li>
+</ul>
+
+<p>Access to the Dealer Portal can be found at: <a href="http://dealer.control4.com">http://dealer.control4.com</a></p>
+
+<p>Once logged in, click on Support -&gt; Drivers -&gt; Driver Development Training to access the Training Portal.</p>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="lua">lua</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
