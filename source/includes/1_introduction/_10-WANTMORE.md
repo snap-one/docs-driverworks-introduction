@@ -72,9 +72,9 @@ Once logged in, click on Support -\> Drivers -\> Driver Development Training to 
 
 
 
-[1]:	https://control4.github.io/docs-driverworks-fundamentals/#introduction
-[2]:	https://control4.github.io/docs-driverworks-api/#introduction
-[3]:	https://control4.github.io/docs-driverworks-proxyprotocol/#introduction
-[4]:	https://control4.github.io/docs-driverworks-knx/#knx-and-control4
-[5]:	https://control4.github.io/docs-zigbee/#overview
+[1]:	https://snap-one.github.io/docs-driverworks-fundamentals/#introduction
+[2]:	https://snap-one.github.io/docs-driverworks-api/#introduction
+[3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#introduction
+[4]:	https://snap-one.github.io/docs-driverworks-knx/#knx-and-control4
+[5]:	https://snap-one.github.io/docs-zigbee/#overview
 [6]:	http://dealer.control4.com
