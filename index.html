@@ -282,8 +282,8 @@
   color: #859900;
 }
     </style>
-    <link href="stylesheets/screen-c9d8fa83.css" rel="stylesheet" media="screen" />
-    <link href="stylesheets/print-953e3353.css" rel="stylesheet" media="print" />
+    <link href="stylesheets/screen-9c19b03a.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-966d6edc.css" rel="stylesheet" media="print" />
       <script src="javascripts/all-b12a2749.js"></script>
 
   </head>
@@ -330,13 +330,13 @@
             <a href="#drivers-and-communication" class="toc-h1 toc-link" data-title="Drivers and Communication">Drivers and Communication</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#sendir" class="toc-h2 toc-link" data-title="SendIR">SendIR</a>
+                    <a href="#drivers-and-communication-sendir" class="toc-h2 toc-link" data-title="SendIR">SendIR</a>
                   </li>
                   <li>
-                    <a href="#receivedfromserial" class="toc-h2 toc-link" data-title="ReceivedFromSerial">ReceivedFromSerial</a>
+                    <a href="#drivers-and-communication-receivedfromserial" class="toc-h2 toc-link" data-title="ReceivedFromSerial">ReceivedFromSerial</a>
                   </li>
                   <li>
-                    <a href="#sendtoserial" class="toc-h2 toc-link" data-title="SendToSerial">SendToSerial</a>
+                    <a href="#drivers-and-communication-sendtoserial" class="toc-h2 toc-link" data-title="SendToSerial">SendToSerial</a>
                   </li>
               </ul>
           </li>
@@ -396,11 +396,11 @@
 11734 S. Election Road
 Salt Lake City, UT 84020 USA</p>
 
-<p><a href="www.control4.com">http://www.control4.com</a></p>
+<p><a href="https://www.control4.com/">https://www.control4.com/</a></p>
 
 <h1 id='introduction'>Introduction</h1>
 
-<p>This documentation is intended to provide an overview of the fundamental components that make up a device driver and the architectural layers that a device driver interacts with.  As a driver developer, you’re tasked with implementing this “interaction”. Successful driver developers build drivers that not only handle numerous dependencies placed on their driver code, but also seek out ways to enhance a device’s capabilities in an automated environment. This level of interaction manifests itself as seamless device integration, a high level of device controllability and ultimately a quality end user experience. This is something we refer to as the Control4 Interoperability Model.</p>
+<p>This documentation is intended to provide an overview of the fundamental components that make up a device driver and the architectural layers that a device driver interacts with.  As a driver developer, you are tasked with implementing this “interaction”. Successful driver developers build drivers that not only handle numerous dependencies placed on their driver code, but also seek out ways to enhance a device’s capabilities in an automated environment. This level of interaction manifests itself as seamless device integration, a high level of device controllability and ultimately a quality end user experience. This is something we refer to as the Control4 Interoperability Model.</p>
 
 <h1 id='the-role-of-director'>The Role of Director</h1>
 
@@ -421,7 +421,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>Your driver will report back to the Control4 system giving indication of device state (i.e., ON &amp; OFF, current volume, currently select media, etc.) and the of the occurrence of Events (i.e. the station has changed, button has been pressed, etc.). This data may be purely informational or may be used for decision making to initiate more advanced functionality.</p>
 
-<p>Another means of supporting user interaction and your device is the “Programming UI.” Programming UI refers to the interaction a user has with a device through programmed button presses, events or other means that are configured in the ComposerPro.</p>
+<p>Another means of supporting user interaction and your device is the “Programming UI.” Programming UI refers to the interaction a user has with a device through programmed button presses, events or other means that are configured in the ComposerPro environment.</p>
 
 <h1 id='understanding-the-role-of-proxies-and-the-proxy-driver'>Understanding the Role of Proxies and the Proxy Driver</h1>
 
@@ -457,11 +457,11 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The DriverWorks SDK includes rich set of APIs. For example, here is our SendIR API documentation.</p>
 
-<h2 id='sendir'>SendIR</h2>
+<h2 id='drivers-and-communication-sendir'>SendIR</h2>
 
 <p>Function called from DriverWorks driver to send an IR Code. This API should not be invoked during OnDriverInit. </p>
 
-<h3 id='signature'>Signature</h3>
+<h3 id='drivers-and-communication-sendir-signature'>Signature</h3>
 
 <p><code>C4:SendIR(idBinding,idIRCode)</code> </p>
 
@@ -485,11 +485,11 @@ Salt Lake City, UT 84020 USA</p>
 </tr>
 </tbody></table>
 
-<h3 id='returns'>Returns</h3>
+<h3 id='drivers-and-communication-sendir-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
-<h3 id='usage-note'>Usage Note</h3>
+<h3 id='drivers-and-communication-sendir-usage-note'>Usage Note</h3>
 
 <p>The IR code to send must be declared as an &lt;ircode&gt; in the &lt;irsection&gt; of the driver’s .c4i/.c4z file.</p>
 
@@ -500,11 +500,11 @@ Our IR Code is sent to Director using the SendIR API. Director then responds by 
 
 <p>This is also a good time to look at some Serial control API’s that are available through the DriverWorks API Reference Guide. Remember when we mentioned that serial control has a significant benefit as it provides the ability to receive feedback from a device? That feedback comes through on an API called: ReceivedfromSerial. This API requires the control connection ID through which the data was received through along with the actual transmitted data from the device.</p>
 
-<h2 id='receivedfromserial'>ReceivedFromSerial</h2>
+<h2 id='drivers-and-communication-receivedfromserial'>ReceivedFromSerial</h2>
 
 <p>Function which dumps the data received from serial (hex format) for inspection via print.  It then evaluates the response for specific delimiters and extracts the necessary components which are then used to do something. This API should not be invoked during OnDriverInit. </p>
 
-<h3 id='signature-2'>Signature</h3>
+<h3 id='drivers-and-communication-receivedfromserial-signature'>Signature</h3>
 
 <p><code>ReceivedFromSerial(idBinding, strData) </code></p>
 
@@ -524,17 +524,17 @@ Our IR Code is sent to Director using the SendIR API. Director then responds by 
 </tr>
 </tbody></table>
 
-<h3 id='usage-note-2'>Usage Note:</h3>
+<h3 id='drivers-and-communication-receivedfromserial-usage-note'>Usage Note:</h3>
 
 <p>Serial data received may contain NULL characters. NULL (‘0’) is a valid character and Lua strings handle embedded NULL characters. Serial data received may only include part of a protocol command from the connected device. It is the driver’s responsibility to re-constitute and parse the commands received from the device.</p>
 
 <p>SendToSerial is another API worth mentioning. It provides a means to send data to your device:</p>
 
-<h2 id='sendtoserial'>SendToSerial</h2>
+<h2 id='drivers-and-communication-sendtoserial'>SendToSerial</h2>
 
 <p>Simple function which sends the command out serial port on binding 1 and adds the r terminator to the end of the command being sent. This API should not be invoked during OnDriverInit.</p>
 
-<h3 id='signature-3'>Signature</h3>
+<h3 id='drivers-and-communication-sendtoserial-signature'>Signature</h3>
 
 <p><code>C4:SendToSerial(idBinding, strData)</code></p>
 
@@ -554,11 +554,11 @@ Our IR Code is sent to Director using the SendIR API. Director then responds by 
 </tr>
 </tbody></table>
 
-<h3 id='returns-2'>Returns</h3>
+<h3 id='drivers-and-communication-sendtoserial-returns'>Returns</h3>
 
 <p><code>None</code></p>
 
-<h3 id='usage-note-3'>Usage Note</h3>
+<h3 id='drivers-and-communication-sendtoserial-usage-note'>Usage Note</h3>
 
 <p>Serial data to be sent can contain NULL characters. NULL (‘0’) is a valid character and Lua strings handle embedded NULL characters.</p>
 
