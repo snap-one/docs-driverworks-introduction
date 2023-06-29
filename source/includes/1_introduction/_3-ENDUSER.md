@@ -1,4 +1,4 @@
-#  Considering End User Interaction
+# Considering End User Interaction
 
 Navigator is the main vehicle for direct user interaction with the Control4 Operating System. The current iterations of Navigator are:
 
@@ -11,4 +11,4 @@ By selecting Navigator elements, the end user can explicitly control a device (v
 
 Your driver will report back to the Control4 system giving indication of device state (i.e., ON & OFF, current volume, currently select media, etc.) and the of the occurrence of Events (i.e. the station has changed, button has been pressed, etc.). This data may be purely informational or may be used for decision making to initiate more advanced functionality.
 
-Another means of supporting user interaction and your device is the “Programming UI.” Programming UI refers to the interaction a user has with a device through programmed button presses, events or other means that are configured in the ComposerPro.
+Another means of supporting user interaction and your device is the “Programming UI.” Programming UI refers to the interaction a user has with a device through programmed button presses, events or other means that are configured in the ComposerPro environment.
