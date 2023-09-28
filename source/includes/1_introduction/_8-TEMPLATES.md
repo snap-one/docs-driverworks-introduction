@@ -1,17 +1,7 @@
-#  Driver Development Templates
+# Driver Development Templates
 
-A driver development template is essentially a Control4 device driver. However, the contents of the driver resemble more of a framework. Your job, as a driver developer, is to fill in the framework that we have provided to produce a finished device driver. Control4 currently provides templates for the following Proxies:
+The SDK includes Driver Development Templates and a utility called JumpStart to accelerate your driver development efforts. Please see the driver template repository for more information on how to leverage these templates:
 
-- AV Switch
-- Blind
-- Doorstation
-- DVD
-- Generic Proxy
-- IP Camera
-- Lock
-- Pool
-- Projector
-- Receiver
-- Security Controller
-- Thermostat
-- TV
+[https://github.com/snap-one/drivers-template-code-public][1]
+
+[1]:	https://github.com/snap-one/drivers-template-code-public

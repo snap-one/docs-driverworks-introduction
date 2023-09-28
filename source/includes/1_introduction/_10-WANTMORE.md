@@ -15,22 +15,13 @@ The DriverWorks SDK includes detailed information on all of the content provided
 - [Zigbee Implementation Guide][5]
 
 
-**Driver Templates:**
-Driver Templates provide an excellent jumping off point for your driver development. The current list of templates include Control4's most popular proxies including:
+**Driver Development Training**
+The SDK includes an online, Micro-Certification featuring three courses that help a developer learn the concepts required to begin creating drivers for use in Control4 systems. To access the videos, please see the [Education Portal][6].
 
-- AV Switch
-- Blind
-- Doorstation
-- DVD
-- Generic Proxy
-- IP Camera
-- Lock
-- Pool
-- Projector
-- Receiver
-- Security Controller
-- Thermostat
-- TV
+**Driver Templates:**
+The SDK includes Driver Development Templates and a utility called JumpStart to accelerate your driver development efforts. Please see the driver template repository for more information on how to leverage these templates:
+
+[https://github.com/snap-one/drivers-template-code-public][7]
 
 **Sample Drivers:**
 Numerous sample drivers that demonstrate more complex driver concepts such as:
@@ -44,30 +35,10 @@ Numerous sample drivers that demonstrate more complex driver concepts such as:
 Templates that will ensure that your driver's icons not only meet Control4 standards but look professional on devices running Navigator.
 
 **Driver Development Training**
-Control4 has created a series of video-based training courses focused on device driver development.  These videos are available through the training area of the Control4 Dealer Portal. Registration is required for both the Dealer Portal and the training website. These videos assume general knowledge of Control4 products, the ComposerPro environment and system setup as delivered in the Dealer Training (101) provided by the Control4 Training Department.
+The SDK includes an online, Micro-Certification featuring three courses that help a developer learn the concepts required to begin creating drivers for use in Control4 systems. To access the videos, please see the [Education Portal][8].
 
-The current list of Driver Development Training Videos include:
 
-Driver Development 201 - A video introduction to Control4 and its interoperability model.
 
-Driver Development 301 - A six video series of explaining Control4 driver architecture, data communication and development tools.
-
-Driver Development 401 - A seven video series addressing items such as the anatomy of a device driver, parsing data, the roles or the proxy and protocol drivers and an overview of Lua functions.
-
-Driver Development T-101 - A four video series introducing Control4's Driver Development Templates and use them to speed up driver development.
-
-Driver Development T-201 - Proxy specific videos that use driver templates as well as  the DriverEditor development environment to create device drivers for:
-
-- IP Cameras
-- Pool Controllers
-- AV Switches
-- Security Systems
-- Door Stations and Intercoms
-- Blind and Shade Controllers
-
-Access to the Dealer Portal can be found at: [http://dealer.control4.com][6]
-
-Once logged in, click on Support -\> Drivers -\> Driver Development Training to access the Training Portal.
 
 
 
@@ -77,4 +48,6 @@ Once logged in, click on Support -\> Drivers -\> Driver Development Training to 
 [3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#introduction
 [4]:	https://snap-one.github.io/docs-driverworks-knx/#knx-and-control4
 [5]:	https://snap-one.github.io/docs-zigbee/#overview
-[6]:	http://dealer.control4.com
+[6]:	https://dealer.control4.com/login?redirect=%2Fsaml%2Ftraining%3Foriginal_uri%3D%252Fcatalog%252Fcourses%252F3347283
+[7]:	https://github.com/snap-one/drivers-template-code-public
+[8]:	https://dealer.control4.com/login?redirect=%2Fsaml%2Ftraining%3Foriginal_uri%3D%252Fcatalog%252Fcourses%252F3347283
