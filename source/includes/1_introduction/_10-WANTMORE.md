@@ -47,7 +47,7 @@ The SDK includes an online, Micro-Certification featuring three courses that hel
 [2]:	https://snap-one.github.io/docs-driverworks-api/#introduction
 [3]:	https://snap-one.github.io/docs-driverworks-proxyprotocol/#introduction
 [4]:	https://snap-one.github.io/docs-driverworks-knx/#knx-and-control4
-[5]:	https://snap-one.github.io/docs-zigbee/#overview
+[5]:	https://snap-one.github.io/docs-zigbee/#control4-zigbee-certification-overview
 [6]:	https://dealer.control4.com/login?redirect=%2Fsaml%2Ftraining%3Foriginal_uri%3D%252Fcatalog%252Fcourses%252F3347283
 [7]:	https://github.com/snap-one/drivers-template-code-public
 [8]:	https://dealer.control4.com/login?redirect=%2Fsaml%2Ftraining%3Foriginal_uri%3D%252Fcatalog%252Fcourses%252F3347283
